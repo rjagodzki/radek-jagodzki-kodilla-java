@@ -23,5 +23,17 @@ public class TestingMain {
         System.out.println("Dodawanie: " + calculator.add(5,10));
         System.out.println("Odejmowanie: " +calculator.substract(10,9));
 
+        int addResult = 15;
+        int substractResult = 1;
+
+        if(addResult == calculator.add(5,10) && substractResult == calculator.substract(10,9)){
+            System.out.println("Test ok");
+        }
+        else{
+            System.out.println("Error!");
+        }
+
+
+
     }
 }
