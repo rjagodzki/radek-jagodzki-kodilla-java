@@ -18,4 +18,8 @@ public class Continent {
     public void addCountry (Country country){
         listOfCountries.add(country);
     }
+
+    public ArrayList<Country> getListOfCountries() {
+        return listOfCountries;
+    }
 }

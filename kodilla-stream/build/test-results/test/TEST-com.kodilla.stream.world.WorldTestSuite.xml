@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.stream.world.WorldTestSuite" tests="1" skipped="0" failures="1" errors="0" timestamp="2019-10-25T19:55:24" hostname="LAPTOP-209R817N" time="0.01">
+<testsuite name="com.kodilla.stream.world.WorldTestSuite" tests="1" skipped="0" failures="1" errors="0" timestamp="2019-10-25T20:11:43" hostname="LAPTOP-209R817N" time="0.01">
   <properties/>
   <testcase name="testGetPeopleQuantity" classname="com.kodilla.stream.world.WorldTestSuite" time="0.01">
     <failure message="java.lang.AssertionError: expected:&lt;3528573474&gt; but was:&lt;0&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;3528573474&gt; but was:&lt;0&gt;
