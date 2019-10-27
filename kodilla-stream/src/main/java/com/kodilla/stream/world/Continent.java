@@ -1,5 +1,6 @@
 package com.kodilla.stream.world;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 
 public class Continent {
@@ -18,8 +19,14 @@ public class Continent {
     public void addCountry (Country country){
         listOfCountries.add(country);
     }
+//    public BigDecimal getContinentQuantity(){
+//        return listOfCountries.stream()
+//                .map(country1 -> country1.getPeopleQuantity())
+//                .reduce(BigDecimal.ZERO,(sum,current) -> (sum= sum.add(current)));
+//    }
 
     public ArrayList<Country> getListOfCountries() {
         return listOfCountries;
     }
+
 }

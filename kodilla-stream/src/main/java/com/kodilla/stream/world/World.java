@@ -17,17 +17,30 @@ public class World {
     }
 
     public BigDecimal getPeopleQuantity(){
-        return listOfContinents.stream()
-               // .flatMap(continent -> continent.)
-            .flatMap(country -> country.getListOfCountries().stream())
-            .map(Country::getPeopleQuantity)
-            .reduce(BigDecimal.ZERO,(sum, current) -> sum = sum.add(current));
-    //do zignorowania, tutaj cos kombinowalem.
-//            for(BigDecimal country : )
-            //.filter(country -> country.getPeopleQuantity() != null )
-//           . ...collect(Collectors.summing(Country::getPeopleQuantity);
-//            .collect(Collectors.toList())
+        BigDecimal peopleQuantity;
+        return  peopleQuantity = listOfContinents.stream()
+                .flatMap(continent -> continent.getListOfCountries().stream())
+                .map(country -> country.getPeopleQuantity())
+                .reduce(BigDecimal.ZERO, (sum, current) -> (sum = sum.add(current)));
+//                .getContinentQuantity().stream()
+//                .flatMap(country->country.getCountryQuantity().stream())
+//                .map(peopleQuantity1->peopleQuantity1.getPeopleQuantity())
+//                .reduce(BigDecimal.ZERO,(sum, current)-> (sum = sum.add(current)))
 
+
+
+        //    return listOfContinents.stream()
+//               // .flatMap(continent -> continent.)
+//            .flatMap(country -> country.getListOfCountries().stream())
+//            .map(Country::getPeopleQuantity)
+//            .reduce(BigDecimal.ZERO,(sum, current) -> sum = sum.add(current));
+//    //do zignorowania, tutaj cos kombinowalem.
+////            for(BigDecimal country : )
+//            //.filter(country -> country.getPeopleQuantity() != null )
+////           . ...collect(Collectors.summing(Country::getPeopleQuantity);
+////            .collect(Collectors.toList())
+
+//        Uwagi do zadania
 
     }
 
