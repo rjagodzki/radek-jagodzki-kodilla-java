@@ -5,11 +5,11 @@ import java.util.ArrayList;
 
 public class Continent {
     private final String continentName;
-    private final Country country;
+//    private final Country country;
     private final ArrayList<Country> listOfCountries = new ArrayList<>();
-    public Continent(String continentName,Country country) {
+    public Continent(String continentName) {
         this.continentName = continentName;
-        this.country = country;
+//        this.country = country;
     }
 
     public String getContinentName() {
