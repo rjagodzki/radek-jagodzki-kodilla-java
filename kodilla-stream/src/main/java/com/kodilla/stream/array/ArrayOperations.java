@@ -8,12 +8,12 @@ public interface ArrayOperations {
          IntStream.range(0,numbers.length)
                  .peek(System.out::println);
 
-
          double result = IntStream.range(0, numbers.length)
                 .map(n->numbers[n])
                 .average().getAsDouble();
 
         System.out.println("Average: " +result);
          return result;
+         //zrozumialem to co przeslales, ale nie wiem w jaki spoosob mialbym coss z tego zrobic w tej klasie
      }
 }
