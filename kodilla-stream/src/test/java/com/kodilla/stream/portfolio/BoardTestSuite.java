@@ -144,27 +144,27 @@ public class BoardTestSuite {
     public void testAddTaskListAverageWorkingOnTask(){
         //Given
         Board project = prepareTestData();
-        Board project1 = prepareTestData();
 
-//        LocalDate end =
         //When
-//        Period period = new Period();
-
-
         List<TaskList>  inProgressTasks = new ArrayList<>();
         inProgressTasks.add(new TaskList("In progress"));
-        long longTasks =project.getTaskLists().stream()
+        double countedDays =project.getTaskLists().stream()
                 .filter(inProgressTasks::contains)
                 .flatMap(tl -> tl.getTasks().stream())
-                .map(t -> t.getDeadLine().getDayOfMonth() - t.getCreated().getDayOfMonth())
+                .map(t -> t.getDeadLine().getDayOfYear() - t.getCreated().getDayOfYear())
                 .reduce(0, (sum, current) -> sum = sum + current);
-//                .reduce(0,(sum , current) -> sum = sum.doubleValue()
 
-//                .reduce(LocalDate.)
-//                .map(t->t.getCreated())
+        //Then
+        double amountOfTasks = project.getTaskLists().stream()
+                .filter((inProgressTasks::contains))
+                .flatMap(tl -> tl.getTasks().stream())
+                .count();
 
-        System.out.println(longTasks);
+        double expectedValue = 55/3;
 
+        System.out.println(expectedValue);
         //Them
+        Assert.assertEquals(expectedValue,countedDays/amountOfTasks, 0.4);
+
     }
 }
