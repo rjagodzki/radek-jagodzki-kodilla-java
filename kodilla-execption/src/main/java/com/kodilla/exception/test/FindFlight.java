@@ -14,16 +14,9 @@ public class FindFlight {
         airportAccess.put("Madrid", true);
 
         if (airportAccess.containsKey(flight.getArrivalAirport()) && airportAccess.containsKey(flight.getDepartureAirport())) {
-            if(airportAccess.get(flight.getDepartureAirport()).booleanValue() && airportAccess.containsKey(flight.getArrivalAirport()))
-
-                System.out.println("Flight from " + flight.getDepartureAirport() + " to " +flight.getArrivalAirport() + " is available");
-
-            else {
-                throw new RouteNotFoundException("Airport is unavailable");
-            }
-        }
-        else {
-             throw new RouteNotFoundException("Airport is unavailable");
+            System.out.println("Flight from " + flight.getDepartureAirport() + " to " +flight.getArrivalAirport() + " is available");
+        } else {
+            throw new RouteNotFoundException("Airport is unavailable");
         }
 
     }
