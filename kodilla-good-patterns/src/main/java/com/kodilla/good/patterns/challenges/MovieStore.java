@@ -4,16 +4,27 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 class MovieStore {
 
     public static void main(String[] args){
         MovieStore movieStore = new MovieStore();
-        movieStore.getMovies().values().stream()
+
+        String movies = movieStore.getMovies().values().stream()
                 .map(s -> s.toString().replace("[",""))
                 .map(s -> s.replace("]",", "))
                 .map(s -> s.replace(", ","!"))
-                .forEach(System.out::print);
+                .collect(Collectors.joining());
+
+        System.out.println(movies);
+//
+//        movieStore.getMovies().values().stream()
+//                .map(s -> s.toString().replace("[",""))
+//                .map(s -> s.replace("]",", "))
+//                .map(s -> s.replace(", ","!"))
+//                .collect(Collectors.joining());
+//                .forEach(System.out::print);
 
 
     }
