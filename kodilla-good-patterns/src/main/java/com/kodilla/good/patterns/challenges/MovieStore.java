@@ -18,17 +18,7 @@ class MovieStore {
                 .collect(Collectors.joining());
 
         System.out.println(movies);
-//
-//        movieStore.getMovies().values().stream()
-//                .map(s -> s.toString().replace("[",""))
-//                .map(s -> s.replace("]",", "))
-//                .map(s -> s.replace(", ","!"))
-//                .collect(Collectors.joining());
-//                .forEach(System.out::print);
-
-
     }
-
 
     public Map<String, List<String>> getMovies() {
 
