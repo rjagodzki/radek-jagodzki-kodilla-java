@@ -1,10 +1,18 @@
 package com.kodilla.testing.collection;
 
 import org.junit.*;
-import com.kodilla.testing.collection.OddNumbersExterminator;
-import java.util.*;
+
+import java.util.ArrayList;
 
 public class CollectionTestSuite {
+    @BeforeClass
+    public static void beforeClass(){
+        System.out.println("Test suite begin");
+    }
+    @AfterClass
+    public static void afterClass(){
+        System.out.println("Test suite end");
+    }
     @Before
     public void before(){
         System.out.println("Test case begin");
@@ -13,58 +21,44 @@ public class CollectionTestSuite {
     public void after(){
         System.out.println("Test case end");
     }
-    @BeforeClass
-    public static void beforeClass(){
-        System.out.print("Test suite begin");
-    }
-    @AfterClass
-    public static void afterClass(){
-        System.out.println("Test suite end");
-    }
-    @Test
-    public void testOddNumbersExterminatorNormalList(){
-        System.out.println("Gdy lista posiada liczby parzyste i nieparzyste");
-        //Given
-        ArrayList<Integer> listToCompare = new ArrayList<>();
-        ArrayList<Integer> numbers = new ArrayList<Integer>();
-        OddNumbersExterminator result = new OddNumbersExterminator(numbers);
-
-            //Lista tworzona do porownania
-        Integer i = 2;
-        while(i<=20){
-            listToCompare.add(i);
-            i+=2;
-        }
-
-        //When
-            //Lista przekazana do klasy OddNumbersExterminator
-        i = 1;
-        while(i<=20){
-            numbers.add(i);
-            i++;
-        }
-
-        //Then
-        Assert.assertEquals(listToCompare,result.exterminate(numbers));
-    }
-
     @Test
     public void testOddNumbersExterminatorEmptyList(){
-        System.out.println("Gdy lista jest pusta");
+        System.out.println("Test OddNumbersExterminator EmptyList");
 
         //Given
-        ArrayList<Integer> listToCompare = new ArrayList<>();
-        ArrayList<Integer> numbers = new ArrayList<Integer>();
-        OddNumbersExterminator result = new OddNumbersExterminator(numbers);
+        ArrayList<Integer> emptyArray = new ArrayList<>();
+        emptyArray.isEmpty();
+        ArrayList<Integer> arrayListToCompare = new ArrayList<>();
+        arrayListToCompare.isEmpty();
 
         //When
-        Integer i = 1;
-        while(i<=20){
-            numbers.add(i);
-            i++;
-        }
+        OddNumbersExterminator oddNumberExterminator = new OddNumbersExterminator(emptyArray);
+        ArrayList exterminatedArray = oddNumberExterminator.exterminate(emptyArray);
 
         //Then
-        Assert.assertNotEquals(listToCompare,result.exterminate(numbers));
+        Assert.assertEquals(arrayListToCompare,exterminatedArray);
+    }
+    @Test
+    public void testOddNumbersExterminatorNormalList() {
+        System.out.println("Test OddNumberExterminator Normal List");
+
+        //Given
+        ArrayList<Integer> arrayToExterminate = new ArrayList<>();
+        for (int i = 0; i < 20; i++) {
+            arrayToExterminate.add(i);
+        }
+        ArrayList<Integer> arrayWithOddNumbers = new ArrayList<>();
+        int i = 0;
+        while (i < 20) {
+            arrayWithOddNumbers.add(i);
+            i += 2;
+        }
+
+        //When
+        OddNumbersExterminator oddNumberExterminator = new OddNumbersExterminator(arrayToExterminate);
+        ArrayList<Integer> exterminatedArray = oddNumberExterminator.exterminate(arrayToExterminate);
+
+        //Then
+        Assert.assertEquals(arrayWithOddNumbers, exterminatedArray);
     }
 }
