@@ -188,12 +188,12 @@ Caused by: org.hibernate.AnnotationException: Associations marked as mappedBy mu
 <div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2019-11-27 21:10:55.973  INFO 15452 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.kodilla.hibernate.KodillaHibernateApplicationTests], using SpringBootContextLoader
-2019-11-27 21:10:55.973  INFO 15452 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.kodilla.hibernate.KodillaHibernateApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-2019-11-27 21:10:55.973  INFO 15452 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.kodilla.hibernate.KodillaHibernateApplicationTests]: KodillaHibernateApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2019-11-27 21:10:55.979  INFO 15452 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.kodilla.hibernate.KodillaHibernateApplication for test class com.kodilla.hibernate.KodillaHibernateApplicationTests
-2019-11-27 21:10:55.981  INFO 15452 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-2019-11-27 21:10:55.982  INFO 15452 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7c8268f5, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@488fcc0e, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@46de7699, org.springframework.test.context.support.DirtiesContextTestExecutionListener@71d009aa, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1e7a02a5, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@28a352d8, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1d7c83eb, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6c1054b7, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@22b11cba, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@10b6afa6, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@69ac0580]
+<pre>2019-12-01 20:43:29.514  INFO 10944 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.kodilla.hibernate.KodillaHibernateApplicationTests], using SpringBootContextLoader
+2019-12-01 20:43:29.515  INFO 10944 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.kodilla.hibernate.KodillaHibernateApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-12-01 20:43:29.515  INFO 10944 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.kodilla.hibernate.KodillaHibernateApplicationTests]: KodillaHibernateApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-12-01 20:43:29.520  INFO 10944 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.kodilla.hibernate.KodillaHibernateApplication for test class com.kodilla.hibernate.KodillaHibernateApplicationTests
+2019-12-01 20:43:29.522  INFO 10944 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-12-01 20:43:29.522  INFO 10944 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5224312a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@58376506, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@23d39bb6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@14431322, org.springframework.test.context.transaction.TransactionalTestExecutionListener@671ddde1, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4e18b51, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3bd0ae50, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3706700b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3efd51df, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@364eee52, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@85264e5]
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -203,23 +203,23 @@ Caused by: org.hibernate.AnnotationException: Associations marked as mappedBy mu
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.1.9.RELEASE)
 
-2019-11-27 21:10:56.012  INFO 15452 --- [    Test worker] c.k.h.KodillaHibernateApplicationTests   : Starting KodillaHibernateApplicationTests on RJ-LAPTOP with PID 15452 (started by jagod in D:\Development\Projects\kodilla\kodilla-hibernate)
-2019-11-27 21:10:56.012  INFO 15452 --- [    Test worker] c.k.h.KodillaHibernateApplicationTests   : No active profile set, falling back to default profiles: default
-2019-11-27 21:10:56.653  INFO 15452 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-11-27 21:10:56.926  INFO 15452 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 270ms. Found 7 repository interfaces.
-2019-11-27 21:10:58.254  INFO 15452 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2019-12-01 20:43:29.543  INFO 10944 --- [    Test worker] c.k.h.KodillaHibernateApplicationTests   : Starting KodillaHibernateApplicationTests on RJ-LAPTOP with PID 10944 (started by jagod in D:\Development\Projects\kodilla\kodilla-hibernate)
+2019-12-01 20:43:29.543  INFO 10944 --- [    Test worker] c.k.h.KodillaHibernateApplicationTests   : No active profile set, falling back to default profiles: default
+2019-12-01 20:43:29.635  INFO 10944 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-01 20:43:29.665  INFO 10944 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30ms. Found 7 repository interfaces.
+2019-12-01 20:43:29.849  INFO 10944 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2019-11-27 21:10:58.327  INFO 15452 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
-2019-11-27 21:10:58.356  INFO 15452 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
-2019-11-27 21:10:58.358  INFO 15452 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2019-11-27 21:10:58.460  WARN 15452 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Associations marked as mappedBy must not define database mappings like @JoinTable or @JoinColumn: com.kodilla.hibernate.task.Invoice.items
-2019-11-27 21:10:58.462  INFO 15452 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
-2019-11-27 21:10:58.512  INFO 15452 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
-2019-11-27 21:10:58.531  INFO 15452 --- [    Test worker] ConditionEvaluationReportLoggingListener : 
+2019-12-01 20:43:29.859  INFO 10944 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2019-12-01 20:43:29.864  INFO 10944 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2019-12-01 20:43:29.864  INFO 10944 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-12-01 20:43:29.877  WARN 10944 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Associations marked as mappedBy must not define database mappings like @JoinTable or @JoinColumn: com.kodilla.hibernate.task.Invoice.items
+2019-12-01 20:43:29.877  INFO 10944 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2019-12-01 20:43:29.878  INFO 10944 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2019-12-01 20:43:29.880  INFO 10944 --- [    Test worker] ConditionEvaluationReportLoggingListener : 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2019-11-27 21:10:58.554 ERROR 15452 --- [    Test worker] o.s.boot.SpringApplication               : Application run failed
+2019-12-01 20:43:29.882 ERROR 10944 --- [    Test worker] o.s.boot.SpringApplication               : Application run failed
 
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Associations marked as mappedBy must not define database mappings like @JoinTable or @JoinColumn: com.kodilla.hibernate.task.Invoice.items
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
@@ -316,23 +316,23 @@ Caused by: org.hibernate.AnnotationException: Associations marked as mappedBy mu
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.1.9.RELEASE)
 
-2019-11-27 21:10:58.981  INFO 15452 --- [    Test worker] c.k.h.KodillaHibernateApplicationTests   : Starting KodillaHibernateApplicationTests on RJ-LAPTOP with PID 15452 (started by jagod in D:\Development\Projects\kodilla\kodilla-hibernate)
-2019-11-27 21:10:58.987  INFO 15452 --- [    Test worker] c.k.h.KodillaHibernateApplicationTests   : No active profile set, falling back to default profiles: default
-2019-11-27 21:11:00.268  INFO 15452 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-11-27 21:11:00.628  INFO 15452 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 350ms. Found 7 repository interfaces.
-2019-11-27 21:11:01.185  INFO 15452 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2019-12-01 20:43:29.913  INFO 10944 --- [    Test worker] c.k.h.KodillaHibernateApplicationTests   : Starting KodillaHibernateApplicationTests on RJ-LAPTOP with PID 10944 (started by jagod in D:\Development\Projects\kodilla\kodilla-hibernate)
+2019-12-01 20:43:29.913  INFO 10944 --- [    Test worker] c.k.h.KodillaHibernateApplicationTests   : No active profile set, falling back to default profiles: default
+2019-12-01 20:43:30.028  INFO 10944 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-01 20:43:30.060  INFO 10944 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32ms. Found 7 repository interfaces.
+2019-12-01 20:43:30.232  INFO 10944 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2019-11-27 21:11:01.201  INFO 15452 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
-2019-11-27 21:11:01.205  INFO 15452 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
-2019-11-27 21:11:01.206  INFO 15452 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2019-11-27 21:11:01.218  WARN 15452 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Associations marked as mappedBy must not define database mappings like @JoinTable or @JoinColumn: com.kodilla.hibernate.task.Invoice.items
-2019-11-27 21:11:01.218  INFO 15452 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
-2019-11-27 21:11:01.220  INFO 15452 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
-2019-11-27 21:11:01.222  INFO 15452 --- [    Test worker] ConditionEvaluationReportLoggingListener : 
+2019-12-01 20:43:30.242  INFO 10944 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2019-12-01 20:43:30.246  INFO 10944 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2019-12-01 20:43:30.246  INFO 10944 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-12-01 20:43:30.257  WARN 10944 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Associations marked as mappedBy must not define database mappings like @JoinTable or @JoinColumn: com.kodilla.hibernate.task.Invoice.items
+2019-12-01 20:43:30.257  INFO 10944 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2019-12-01 20:43:30.258  INFO 10944 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2019-12-01 20:43:30.259  INFO 10944 --- [    Test worker] ConditionEvaluationReportLoggingListener : 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2019-11-27 21:11:01.224 ERROR 15452 --- [    Test worker] o.s.boot.SpringApplication               : Application run failed
+2019-12-01 20:43:30.260 ERROR 10944 --- [    Test worker] o.s.boot.SpringApplication               : Application run failed
 
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Associations marked as mappedBy must not define database mappings like @JoinTable or @JoinColumn: com.kodilla.hibernate.task.Invoice.items
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
@@ -419,7 +419,7 @@ Caused by: org.hibernate.AnnotationException: Associations marked as mappedBy mu
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
 	... 64 common frames omitted
 
-2019-11-27 21:11:01.227 ERROR 15452 --- [    Test worker] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@46de7699] to prepare test instance [com.kodilla.hibernate.KodillaHibernateApplicationTests@2ee7bfd9]
+2019-12-01 20:43:30.263 ERROR 10944 --- [    Test worker] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@23d39bb6] to prepare test instance [com.kodilla.hibernate.KodillaHibernateApplicationTests@5ec252c4]
 
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125) ~[spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
@@ -521,7 +521,7 @@ Caused by: org.hibernate.AnnotationException: Associations marked as mappedBy mu
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.6.2</a> at 2019-11-27 21:11:10</p>
+<a href="http://www.gradle.org">Gradle 5.6.2</a> at 2019-12-01 20:43:34</p>
 </div>
 </div>
 </body>
