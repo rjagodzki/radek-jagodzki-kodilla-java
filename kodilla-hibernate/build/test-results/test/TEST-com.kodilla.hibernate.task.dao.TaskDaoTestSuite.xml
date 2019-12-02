@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.hibernate.task.dao.TaskDaoTestSuite" tests="3" skipped="0" failures="3" errors="0" timestamp="2019-12-01T19:43:31" hostname="RJ-LAPTOP" time="0.931">
+<testsuite name="com.kodilla.hibernate.task.dao.TaskDaoTestSuite" tests="3" skipped="0" failures="3" errors="0" timestamp="2019-12-02T00:53:31" hostname="RJ-LAPTOP" time="5.886">
   <properties/>
   <testcase name="testTaskDaoFindByDuration" classname="com.kodilla.hibernate.task.dao.TaskDaoTestSuite" time="0.0">
     <failure message="java.lang.IllegalStateException: Failed to load ApplicationContext" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Failed to load ApplicationContext
@@ -274,12 +274,12 @@ Caused by: org.hibernate.AnnotationException: Associations marked as mappedBy mu
 	... 65 more
 </failure>
   </testcase>
-  <system-out><![CDATA[2019-12-01 20:43:30.806  INFO 10944 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.kodilla.hibernate.task.dao.TaskDaoTestSuite], using SpringBootContextLoader
-2019-12-01 20:43:30.807  INFO 10944 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.kodilla.hibernate.task.dao.TaskDaoTestSuite]: no resource found for suffixes {-context.xml, Context.groovy}.
-2019-12-01 20:43:30.807  INFO 10944 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.kodilla.hibernate.task.dao.TaskDaoTestSuite]: TaskDaoTestSuite does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2019-12-01 20:43:30.817  INFO 10944 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.kodilla.hibernate.KodillaHibernateApplication for test class com.kodilla.hibernate.task.dao.TaskDaoTestSuite
-2019-12-01 20:43:30.819  INFO 10944 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-2019-12-01 20:43:30.819  INFO 10944 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@30fa32ac, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@59148d5a, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@404beb3d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2d7d2468, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4c731c39, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@31f036b0, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2efd31b0, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6a671e63, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3e2155c2, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@e54b100, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@496361cb]
+  <system-out><![CDATA[2019-12-02 01:53:31.234  INFO 14824 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.kodilla.hibernate.task.dao.TaskDaoTestSuite], using SpringBootContextLoader
+2019-12-02 01:53:31.234  INFO 14824 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.kodilla.hibernate.task.dao.TaskDaoTestSuite]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-12-02 01:53:31.235  INFO 14824 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.kodilla.hibernate.task.dao.TaskDaoTestSuite]: TaskDaoTestSuite does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-12-02 01:53:31.247  INFO 14824 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.kodilla.hibernate.KodillaHibernateApplication for test class com.kodilla.hibernate.task.dao.TaskDaoTestSuite
+2019-12-02 01:53:31.249  INFO 14824 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-12-02 01:53:31.250  INFO 14824 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@23f25093, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@45b59647, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@739d5b6e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1bd9cc0, org.springframework.test.context.transaction.TransactionalTestExecutionListener@30fa32ac, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@59148d5a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@404beb3d, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2d7d2468, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4c731c39, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@31f036b0, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2efd31b0]
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -289,23 +289,23 @@ Caused by: org.hibernate.AnnotationException: Associations marked as mappedBy mu
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.1.9.RELEASE)
 
-2019-12-01 20:43:30.837  INFO 10944 --- [    Test worker] c.k.hibernate.task.dao.TaskDaoTestSuite  : Starting TaskDaoTestSuite on RJ-LAPTOP with PID 10944 (started by jagod in D:\Development\Projects\kodilla\kodilla-hibernate)
-2019-12-01 20:43:30.838  INFO 10944 --- [    Test worker] c.k.hibernate.task.dao.TaskDaoTestSuite  : No active profile set, falling back to default profiles: default
-2019-12-01 20:43:30.922  INFO 10944 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-12-01 20:43:30.940  INFO 10944 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18ms. Found 7 repository interfaces.
-2019-12-01 20:43:31.041  INFO 10944 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2019-12-02 01:53:31.267  INFO 14824 --- [    Test worker] c.k.hibernate.task.dao.TaskDaoTestSuite  : Starting TaskDaoTestSuite on RJ-LAPTOP with PID 14824 (started by jagod in D:\Development\Projects\radek-jagodzki-kodilla-java\kodilla-hibernate)
+2019-12-02 01:53:31.267  INFO 14824 --- [    Test worker] c.k.hibernate.task.dao.TaskDaoTestSuite  : No active profile set, falling back to default profiles: default
+2019-12-02 01:53:31.339  INFO 14824 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-02 01:53:31.360  INFO 14824 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21ms. Found 7 repository interfaces.
+2019-12-02 01:53:31.470  INFO 14824 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2019-12-01 20:43:31.051  INFO 10944 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
-2019-12-01 20:43:31.055  INFO 10944 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
-2019-12-01 20:43:31.055  INFO 10944 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2019-12-01 20:43:31.065  WARN 10944 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Associations marked as mappedBy must not define database mappings like @JoinTable or @JoinColumn: com.kodilla.hibernate.task.Invoice.items
-2019-12-01 20:43:31.065  INFO 10944 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
-2019-12-01 20:43:31.066  INFO 10944 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
-2019-12-01 20:43:31.069  INFO 10944 --- [    Test worker] ConditionEvaluationReportLoggingListener : 
+2019-12-02 01:53:31.477  INFO 14824 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2019-12-02 01:53:31.481  INFO 14824 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2019-12-02 01:53:31.482  INFO 14824 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-12-02 01:53:31.488  WARN 14824 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Associations marked as mappedBy must not define database mappings like @JoinTable or @JoinColumn: com.kodilla.hibernate.task.Invoice.items
+2019-12-02 01:53:31.488  INFO 14824 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2019-12-02 01:53:31.489  INFO 14824 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2019-12-02 01:53:31.490  INFO 14824 --- [    Test worker] ConditionEvaluationReportLoggingListener : 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2019-12-01 20:43:31.070 ERROR 10944 --- [    Test worker] o.s.boot.SpringApplication               : Application run failed
+2019-12-02 01:53:31.491 ERROR 14824 --- [    Test worker] o.s.boot.SpringApplication               : Application run failed
 
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Associations marked as mappedBy must not define database mappings like @JoinTable or @JoinColumn: com.kodilla.hibernate.task.Invoice.items
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
@@ -402,23 +402,23 @@ Caused by: org.hibernate.AnnotationException: Associations marked as mappedBy mu
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.1.9.RELEASE)
 
-2019-12-01 20:43:31.094  INFO 10944 --- [    Test worker] c.k.hibernate.task.dao.TaskDaoTestSuite  : Starting TaskDaoTestSuite on RJ-LAPTOP with PID 10944 (started by jagod in D:\Development\Projects\kodilla\kodilla-hibernate)
-2019-12-01 20:43:31.094  INFO 10944 --- [    Test worker] c.k.hibernate.task.dao.TaskDaoTestSuite  : No active profile set, falling back to default profiles: default
-2019-12-01 20:43:31.180  INFO 10944 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-12-01 20:43:31.203  INFO 10944 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23ms. Found 7 repository interfaces.
-2019-12-01 20:43:31.318  INFO 10944 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2019-12-02 01:53:31.509  INFO 14824 --- [    Test worker] c.k.hibernate.task.dao.TaskDaoTestSuite  : Starting TaskDaoTestSuite on RJ-LAPTOP with PID 14824 (started by jagod in D:\Development\Projects\radek-jagodzki-kodilla-java\kodilla-hibernate)
+2019-12-02 01:53:31.509  INFO 14824 --- [    Test worker] c.k.hibernate.task.dao.TaskDaoTestSuite  : No active profile set, falling back to default profiles: default
+2019-12-02 01:53:31.579  INFO 14824 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-02 01:53:31.598  INFO 14824 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19ms. Found 7 repository interfaces.
+2019-12-02 01:53:31.706  INFO 14824 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2019-12-01 20:43:31.325  INFO 10944 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
-2019-12-01 20:43:31.337  INFO 10944 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
-2019-12-01 20:43:31.337  INFO 10944 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2019-12-01 20:43:31.345  WARN 10944 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Associations marked as mappedBy must not define database mappings like @JoinTable or @JoinColumn: com.kodilla.hibernate.task.Invoice.items
-2019-12-01 20:43:31.345  INFO 10944 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
-2019-12-01 20:43:31.347  INFO 10944 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
-2019-12-01 20:43:31.348  INFO 10944 --- [    Test worker] ConditionEvaluationReportLoggingListener : 
+2019-12-02 01:53:31.712  INFO 14824 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2019-12-02 01:53:31.724  INFO 14824 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2019-12-02 01:53:31.724  INFO 14824 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-12-02 01:53:31.730  WARN 14824 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Associations marked as mappedBy must not define database mappings like @JoinTable or @JoinColumn: com.kodilla.hibernate.task.Invoice.items
+2019-12-02 01:53:31.730  INFO 14824 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2019-12-02 01:53:31.731  INFO 14824 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2019-12-02 01:53:31.732  INFO 14824 --- [    Test worker] ConditionEvaluationReportLoggingListener : 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2019-12-01 20:43:31.350 ERROR 10944 --- [    Test worker] o.s.boot.SpringApplication               : Application run failed
+2019-12-02 01:53:31.733 ERROR 14824 --- [    Test worker] o.s.boot.SpringApplication               : Application run failed
 
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Associations marked as mappedBy must not define database mappings like @JoinTable or @JoinColumn: com.kodilla.hibernate.task.Invoice.items
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
@@ -505,7 +505,7 @@ Caused by: org.hibernate.AnnotationException: Associations marked as mappedBy mu
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
 	... 64 common frames omitted
 
-2019-12-01 20:43:31.351 ERROR 10944 --- [    Test worker] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@404beb3d] to prepare test instance [com.kodilla.hibernate.task.dao.TaskDaoTestSuite@12da9548]
+2019-12-02 01:53:31.735 ERROR 14824 --- [    Test worker] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@739d5b6e] to prepare test instance [com.kodilla.hibernate.task.dao.TaskDaoTestSuite@fff7fd9]
 
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125) ~[spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
@@ -605,23 +605,23 @@ Caused by: org.hibernate.AnnotationException: Associations marked as mappedBy mu
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.1.9.RELEASE)
 
-2019-12-01 20:43:31.370  INFO 10944 --- [    Test worker] c.k.hibernate.task.dao.TaskDaoTestSuite  : Starting TaskDaoTestSuite on RJ-LAPTOP with PID 10944 (started by jagod in D:\Development\Projects\kodilla\kodilla-hibernate)
-2019-12-01 20:43:31.370  INFO 10944 --- [    Test worker] c.k.hibernate.task.dao.TaskDaoTestSuite  : No active profile set, falling back to default profiles: default
-2019-12-01 20:43:31.437  INFO 10944 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-12-01 20:43:31.458  INFO 10944 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21ms. Found 7 repository interfaces.
-2019-12-01 20:43:31.568  INFO 10944 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2019-12-02 01:53:31.834  INFO 14824 --- [    Test worker] c.k.hibernate.task.dao.TaskDaoTestSuite  : Starting TaskDaoTestSuite on RJ-LAPTOP with PID 14824 (started by jagod in D:\Development\Projects\radek-jagodzki-kodilla-java\kodilla-hibernate)
+2019-12-02 01:53:31.838  INFO 14824 --- [    Test worker] c.k.hibernate.task.dao.TaskDaoTestSuite  : No active profile set, falling back to default profiles: default
+2019-12-02 01:53:32.868  INFO 14824 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-02 01:53:33.139  INFO 14824 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 270ms. Found 7 repository interfaces.
+2019-12-02 01:53:34.473  INFO 14824 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2019-12-01 20:43:31.574  INFO 10944 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
-2019-12-01 20:43:31.578  INFO 10944 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
-2019-12-01 20:43:31.578  INFO 10944 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2019-12-01 20:43:31.585  WARN 10944 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Associations marked as mappedBy must not define database mappings like @JoinTable or @JoinColumn: com.kodilla.hibernate.task.Invoice.items
-2019-12-01 20:43:31.585  INFO 10944 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
-2019-12-01 20:43:31.587  INFO 10944 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
-2019-12-01 20:43:31.589  INFO 10944 --- [    Test worker] ConditionEvaluationReportLoggingListener : 
+2019-12-02 01:53:34.561  INFO 14824 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2019-12-02 01:53:34.590  INFO 14824 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2019-12-02 01:53:34.591  INFO 14824 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-12-02 01:53:34.671  WARN 14824 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Associations marked as mappedBy must not define database mappings like @JoinTable or @JoinColumn: com.kodilla.hibernate.task.Invoice.items
+2019-12-02 01:53:34.672  INFO 14824 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2019-12-02 01:53:34.684  INFO 14824 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2019-12-02 01:53:34.699  INFO 14824 --- [    Test worker] ConditionEvaluationReportLoggingListener : 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2019-12-01 20:43:31.589 ERROR 10944 --- [    Test worker] o.s.boot.SpringApplication               : Application run failed
+2019-12-02 01:53:34.710 ERROR 14824 --- [    Test worker] o.s.boot.SpringApplication               : Application run failed
 
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Associations marked as mappedBy must not define database mappings like @JoinTable or @JoinColumn: com.kodilla.hibernate.task.Invoice.items
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
@@ -718,23 +718,23 @@ Caused by: org.hibernate.AnnotationException: Associations marked as mappedBy mu
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.1.9.RELEASE)
 
-2019-12-01 20:43:31.606  INFO 10944 --- [    Test worker] c.k.hibernate.task.dao.TaskDaoTestSuite  : Starting TaskDaoTestSuite on RJ-LAPTOP with PID 10944 (started by jagod in D:\Development\Projects\kodilla\kodilla-hibernate)
-2019-12-01 20:43:31.606  INFO 10944 --- [    Test worker] c.k.hibernate.task.dao.TaskDaoTestSuite  : No active profile set, falling back to default profiles: default
-2019-12-01 20:43:31.674  INFO 10944 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-12-01 20:43:31.690  INFO 10944 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 7 repository interfaces.
-2019-12-01 20:43:31.779  INFO 10944 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2019-12-02 01:53:34.932  INFO 14824 --- [    Test worker] c.k.hibernate.task.dao.TaskDaoTestSuite  : Starting TaskDaoTestSuite on RJ-LAPTOP with PID 14824 (started by jagod in D:\Development\Projects\radek-jagodzki-kodilla-java\kodilla-hibernate)
+2019-12-02 01:53:34.935  INFO 14824 --- [    Test worker] c.k.hibernate.task.dao.TaskDaoTestSuite  : No active profile set, falling back to default profiles: default
+2019-12-02 01:53:36.322  INFO 14824 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-02 01:53:36.654  INFO 14824 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 330ms. Found 7 repository interfaces.
+2019-12-02 01:53:36.925  INFO 14824 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2019-12-01 20:43:31.787  INFO 10944 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
-2019-12-01 20:43:31.791  INFO 10944 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
-2019-12-01 20:43:31.791  INFO 10944 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2019-12-01 20:43:31.798  WARN 10944 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Associations marked as mappedBy must not define database mappings like @JoinTable or @JoinColumn: com.kodilla.hibernate.task.Invoice.items
-2019-12-01 20:43:31.798  INFO 10944 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
-2019-12-01 20:43:31.800  INFO 10944 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
-2019-12-01 20:43:31.801  INFO 10944 --- [    Test worker] ConditionEvaluationReportLoggingListener : 
+2019-12-02 01:53:36.936  INFO 14824 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2019-12-02 01:53:36.941  INFO 14824 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2019-12-02 01:53:36.941  INFO 14824 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-12-02 01:53:36.950  WARN 14824 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Associations marked as mappedBy must not define database mappings like @JoinTable or @JoinColumn: com.kodilla.hibernate.task.Invoice.items
+2019-12-02 01:53:36.950  INFO 14824 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2019-12-02 01:53:36.952  INFO 14824 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+2019-12-02 01:53:36.954  INFO 14824 --- [    Test worker] ConditionEvaluationReportLoggingListener : 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2019-12-01 20:43:31.802 ERROR 10944 --- [    Test worker] o.s.boot.SpringApplication               : Application run failed
+2019-12-02 01:53:36.956 ERROR 14824 --- [    Test worker] o.s.boot.SpringApplication               : Application run failed
 
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Associations marked as mappedBy must not define database mappings like @JoinTable or @JoinColumn: com.kodilla.hibernate.task.Invoice.items
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
@@ -821,7 +821,7 @@ Caused by: org.hibernate.AnnotationException: Associations marked as mappedBy mu
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
 	... 64 common frames omitted
 
-2019-12-01 20:43:31.803 ERROR 10944 --- [    Test worker] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@404beb3d] to prepare test instance [com.kodilla.hibernate.task.dao.TaskDaoTestSuite@7d3fd172]
+2019-12-02 01:53:36.957 ERROR 14824 --- [    Test worker] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@739d5b6e] to prepare test instance [com.kodilla.hibernate.task.dao.TaskDaoTestSuite@3c96f739]
 
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125) ~[spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
@@ -921,23 +921,23 @@ Caused by: org.hibernate.AnnotationException: Associations marked as mappedBy mu
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.1.9.RELEASE)
 
-2019-12-01 20:43:31.824  INFO 10944 --- [    Test worker] c.k.hibernate.task.dao.TaskDaoTestSuite  : Starting TaskDaoTestSuite on RJ-LAPTOP with PID 10944 (started by jagod in D:\Development\Projects\kodilla\kodilla-hibernate)
-2019-12-01 20:43:31.824  INFO 10944 --- [    Test worker] c.k.hibernate.task.dao.TaskDaoTestSuite  : No active profile set, falling back to default profiles: default
-2019-12-01 20:43:31.911  INFO 10944 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-12-01 20:43:31.930  INFO 10944 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19ms. Found 7 repository interfaces.
-2019-12-01 20:43:32.033  INFO 10944 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2019-12-02 01:53:37.004  INFO 14824 --- [    Test worker] c.k.hibernate.task.dao.TaskDaoTestSuite  : Starting TaskDaoTestSuite on RJ-LAPTOP with PID 14824 (started by jagod in D:\Development\Projects\radek-jagodzki-kodilla-java\kodilla-hibernate)
+2019-12-02 01:53:37.004  INFO 14824 --- [    Test worker] c.k.hibernate.task.dao.TaskDaoTestSuite  : No active profile set, falling back to default profiles: default
+2019-12-02 01:53:37.135  INFO 14824 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-02 01:53:37.168  INFO 14824 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33ms. Found 7 repository interfaces.
+2019-12-02 01:53:37.330  INFO 14824 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2019-12-01 20:43:32.042  INFO 10944 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
-2019-12-01 20:43:32.045  INFO 10944 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
-2019-12-01 20:43:32.045  INFO 10944 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2019-12-01 20:43:32.050  WARN 10944 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Associations marked as mappedBy must not define database mappings like @JoinTable or @JoinColumn: com.kodilla.hibernate.task.Invoice.items
-2019-12-01 20:43:32.050  INFO 10944 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
-2019-12-01 20:43:32.052  INFO 10944 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
-2019-12-01 20:43:32.053  INFO 10944 --- [    Test worker] ConditionEvaluationReportLoggingListener : 
+2019-12-02 01:53:37.340  INFO 14824 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2019-12-02 01:53:37.343  INFO 14824 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2019-12-02 01:53:37.344  INFO 14824 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-12-02 01:53:37.352  WARN 14824 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Associations marked as mappedBy must not define database mappings like @JoinTable or @JoinColumn: com.kodilla.hibernate.task.Invoice.items
+2019-12-02 01:53:37.352  INFO 14824 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2019-12-02 01:53:37.353  INFO 14824 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+2019-12-02 01:53:37.355  INFO 14824 --- [    Test worker] ConditionEvaluationReportLoggingListener : 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2019-12-01 20:43:32.055 ERROR 10944 --- [    Test worker] o.s.boot.SpringApplication               : Application run failed
+2019-12-02 01:53:37.356 ERROR 14824 --- [    Test worker] o.s.boot.SpringApplication               : Application run failed
 
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Associations marked as mappedBy must not define database mappings like @JoinTable or @JoinColumn: com.kodilla.hibernate.task.Invoice.items
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
@@ -1034,23 +1034,23 @@ Caused by: org.hibernate.AnnotationException: Associations marked as mappedBy mu
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.1.9.RELEASE)
 
-2019-12-01 20:43:32.073  INFO 10944 --- [    Test worker] c.k.hibernate.task.dao.TaskDaoTestSuite  : Starting TaskDaoTestSuite on RJ-LAPTOP with PID 10944 (started by jagod in D:\Development\Projects\kodilla\kodilla-hibernate)
-2019-12-01 20:43:32.073  INFO 10944 --- [    Test worker] c.k.hibernate.task.dao.TaskDaoTestSuite  : No active profile set, falling back to default profiles: default
-2019-12-01 20:43:32.140  INFO 10944 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-12-01 20:43:32.159  INFO 10944 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19ms. Found 7 repository interfaces.
-2019-12-01 20:43:32.260  INFO 10944 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2019-12-02 01:53:37.376  INFO 14824 --- [    Test worker] c.k.hibernate.task.dao.TaskDaoTestSuite  : Starting TaskDaoTestSuite on RJ-LAPTOP with PID 14824 (started by jagod in D:\Development\Projects\radek-jagodzki-kodilla-java\kodilla-hibernate)
+2019-12-02 01:53:37.376  INFO 14824 --- [    Test worker] c.k.hibernate.task.dao.TaskDaoTestSuite  : No active profile set, falling back to default profiles: default
+2019-12-02 01:53:37.459  INFO 14824 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-02 01:53:37.481  INFO 14824 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21ms. Found 7 repository interfaces.
+2019-12-02 01:53:37.596  INFO 14824 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2019-12-01 20:43:32.267  INFO 10944 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
-2019-12-01 20:43:32.270  INFO 10944 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
-2019-12-01 20:43:32.270  INFO 10944 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2019-12-01 20:43:32.276  WARN 10944 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Associations marked as mappedBy must not define database mappings like @JoinTable or @JoinColumn: com.kodilla.hibernate.task.Invoice.items
-2019-12-01 20:43:32.276  INFO 10944 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown initiated...
-2019-12-01 20:43:32.277  INFO 10944 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown completed.
-2019-12-01 20:43:32.279  INFO 10944 --- [    Test worker] ConditionEvaluationReportLoggingListener : 
+2019-12-02 01:53:37.606  INFO 14824 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
+2019-12-02 01:53:37.610  INFO 14824 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
+2019-12-02 01:53:37.610  INFO 14824 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-12-02 01:53:37.617  WARN 14824 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Associations marked as mappedBy must not define database mappings like @JoinTable or @JoinColumn: com.kodilla.hibernate.task.Invoice.items
+2019-12-02 01:53:37.618  INFO 14824 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown initiated...
+2019-12-02 01:53:37.619  INFO 14824 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown completed.
+2019-12-02 01:53:37.620  INFO 14824 --- [    Test worker] ConditionEvaluationReportLoggingListener : 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2019-12-01 20:43:32.280 ERROR 10944 --- [    Test worker] o.s.boot.SpringApplication               : Application run failed
+2019-12-02 01:53:37.621 ERROR 14824 --- [    Test worker] o.s.boot.SpringApplication               : Application run failed
 
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Associations marked as mappedBy must not define database mappings like @JoinTable or @JoinColumn: com.kodilla.hibernate.task.Invoice.items
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
@@ -1137,7 +1137,7 @@ Caused by: org.hibernate.AnnotationException: Associations marked as mappedBy mu
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
 	... 64 common frames omitted
 
-2019-12-01 20:43:32.282 ERROR 10944 --- [    Test worker] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@404beb3d] to prepare test instance [com.kodilla.hibernate.task.dao.TaskDaoTestSuite@7ec3eb3]
+2019-12-02 01:53:37.623 ERROR 14824 --- [    Test worker] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@739d5b6e] to prepare test instance [com.kodilla.hibernate.task.dao.TaskDaoTestSuite@36544da4]
 
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125) ~[spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]

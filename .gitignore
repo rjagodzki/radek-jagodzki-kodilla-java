@@ -19,7 +19,9 @@ HELP.md
 *.iws
 *.iml
 *.ipr
+*.html
 /out/
+**/out/ **/bulid/
 
 ### NetBeans ###
 /nbproject/private/
@@ -30,4 +32,3 @@ HELP.md
 
 ### VS Code ###
 .vscode/
-**/out/ **/bulid/
