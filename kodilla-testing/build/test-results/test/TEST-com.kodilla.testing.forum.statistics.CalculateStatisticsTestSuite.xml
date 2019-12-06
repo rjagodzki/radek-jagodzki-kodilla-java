@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.testing.forum.statistics.CalculateStatisticsTestSuite" tests="7" skipped="0" failures="0" errors="0" timestamp="2019-12-06T15:12:42" hostname="RJ-LAPTOP" time="0.137">
+  <properties/>
+  <testcase name="testCalculateAdvStatisticWhenCommentsQuantityEquals0" classname="com.kodilla.testing.forum.statistics.CalculateStatisticsTestSuite" time="0.127"/>
+  <testcase name="testCalculateAdvStatisticWhenUsersQuantityEquals0" classname="com.kodilla.testing.forum.statistics.CalculateStatisticsTestSuite" time="0.001"/>
+  <testcase name="testCalculateAdvStatisticWhenCommentsQuantityIsSmallerThanPostsQuantity" classname="com.kodilla.testing.forum.statistics.CalculateStatisticsTestSuite" time="0.001"/>
+  <testcase name="testCalculateAdvStatisticWhenCommentsQuantityIsHigherThanPostsQuantity" classname="com.kodilla.testing.forum.statistics.CalculateStatisticsTestSuite" time="0.002"/>
+  <testcase name="testCalculateAdvStatisticWhenUsersQuantityEquals100" classname="com.kodilla.testing.forum.statistics.CalculateStatisticsTestSuite" time="0.001"/>
+  <testcase name="testCalculateAdvStatisticWhenPostsQuantityEquals0" classname="com.kodilla.testing.forum.statistics.CalculateStatisticsTestSuite" time="0.001"/>
+  <testcase name="testCalculateAdvStatisticWhenPostsQuantityEquals1000" classname="com.kodilla.testing.forum.statistics.CalculateStatisticsTestSuite" time="0.001"/>
+  <system-out><![CDATA[Tests began
+
+Test #1 has began
+Test: Comments Quantity Equals 0
+Average Posts Quantity For User: 20.0
+Average Comments Quantity For User: 0.0
+Average Comments Quantity For Post: 0.0
+Test #1 has ended
+
+Test #2 has began
+Test: Users Quantity Equals 0
+Average Posts Quantity For User: NaN
+Average Comments Quantity For User: Infinity
+Average Comments Quantity For Post: Infinity
+Test #2 has ended
+
+Test #3 has began
+Test: Comments Quantity is Smaller Than Posts Quantity
+Average Posts Quantity For User: 20.0
+Average Comments Quantity For User: 10.0
+Average Comments Quantity For Post: 0.5
+Test #3 has ended
+
+Test #4 has began
+Test: Comments Quantity is Higher Than Posts Quantity
+Average Posts Quantity For User: 2.0
+Average Comments Quantity For User: 100.0
+Average Comments Quantity For Post: 50.0
+Test #4 has ended
+
+Test #5 has began
+Test: Users Quantity Equals 100
+Average Posts Quantity For User: 1.0
+Average Comments Quantity For User: 0.5
+Average Comments Quantity For Post: 0.5
+Test #5 has ended
+
+Test #6 has began
+Test: Posts Quantity Equals 0
+Average Posts Quantity For User: 0.0
+Average Comments Quantity For User: 10.0
+Average Comments Quantity For Post: Infinity
+Test #6 has ended
+
+Test #7 has began
+Test: Posts Quantity Equals 1000
+Average Posts Quantity For User: 200.0
+Average Comments Quantity For User: 10.0
+Average Comments Quantity For Post: 0.05
+Test #7 has ended
+Tests ended
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
