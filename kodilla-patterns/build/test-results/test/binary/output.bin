@@ -1,25 +1,4 @@
-Library: J.K. Rowling Library
-q      Book{title='Harry Potter and the Order of the Phoenix', author='J.K. Rowling', publicationDate=2003-06-21}
-n      Book{title='Harry Potter and the Half-Blood Prince', author='J.K. Rowling', publicationDate=2005-07-16}
-o      Book{title='Harry Potter and the Chamber of Secrets', author='J.K. Rowling', publicationDate=1998-07-02}
-k      Book{title='Harry Potter and the Goblet of Fire', author='J.K. Rowling', publicationDate=2000-07-08}
-p      Book{title='Harry Potter and the Prisoner of Azkaban', author='J.K. Rowling', publicationDate=1999-07-08}
-w      Book{title='Harry Potter and the Philosopherâ€™s Stone', author='J.K. Rowling', publicationDate=1997-04-10}
-l      Book{title='Harry Potter and the Deathly Hallows', author='J.K. Rowling', publicationDate=2007-07-21}
-
-Library: Shallow Copy
-q      Book{title='Harry Potter and the Order of the Phoenix', author='J.K. Rowling', publicationDate=2003-06-21}
-n      Book{title='Harry Potter and the Half-Blood Prince', author='J.K. Rowling', publicationDate=2005-07-16}
-o      Book{title='Harry Potter and the Chamber of Secrets', author='J.K. Rowling', publicationDate=1998-07-02}
-k      Book{title='Harry Potter and the Goblet of Fire', author='J.K. Rowling', publicationDate=2000-07-08}
-p      Book{title='Harry Potter and the Prisoner of Azkaban', author='J.K. Rowling', publicationDate=1999-07-08}
-w      Book{title='Harry Potter and the Philosopherâ€™s Stone', author='J.K. Rowling', publicationDate=1997-04-10}
-l      Book{title='Harry Potter and the Deathly Hallows', author='J.K. Rowling', publicationDate=2007-07-21}
-
-Library: Deep Copy
-q      Book{title='Harry Potter and the Order of the Phoenix', author='J.K. Rowling', publicationDate=2003-06-21}
-n      Book{title='Harry Potter and the Half-Blood Prince', author='J.K. Rowling', publicationDate=2005-07-16}
-k      Book{title='Harry Potter and the Goblet of Fire', author='J.K. Rowling', publicationDate=2000-07-08}
-p      Book{title='Harry Potter and the Prisoner of Azkaban', author='J.K. Rowling', publicationDate=1999-07-08}
-l      Book{title='Harry Potter and the Deathly Hallows', author='J.K. Rowling', publicationDate=2007-07-21}
-
+Joey Twitter
+Monica Snapchat
+Rachel Facebook
+Pheobe Twitter
