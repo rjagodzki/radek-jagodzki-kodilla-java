@@ -1,6 +1,4 @@
-package com.kodilla.hibernate.task;
-
-import com.kodilla.hibernate.invoice.Item;
+package com.kodilla.hibernate.invoice;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -22,8 +20,8 @@ public class Invoice {
     }
 
     @Id
-    @GeneratedValue
     @NotNull
+    @GeneratedValue
     @Column(name = "ID", unique = true)
     public int getId() {
         return id;
@@ -33,23 +31,21 @@ public class Invoice {
     public String getNumber() {
         return number;
     }
-
     @OneToMany(
             targetEntity = Item.class,
-            mappedBy = "items",
+            mappedBy = "invoice",
             cascade = CascadeType.ALL,
             fetch = FetchType.LAZY
     )
-    @JoinColumn(name = "ITEM_ID")
     public List<Item> getItems() {
         return items;
     }
 
-    private void setId(int id) {
+    public void setId(int id) {
         this.id = id;
     }
 
-    private void setNumber(String number) {
+    public void setNumber(String number) {
         this.number = number;
     }
 

@@ -1,103 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite" tests="1" skipped="0" failures="1" errors="0" timestamp="2019-12-02T00:53:31" hostname="RJ-LAPTOP" time="0.0">
+<testsuite name="com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-03-29T15:12:10" hostname="RJ-LAPTOP" time="0.648">
   <properties/>
-  <testcase name="testSaveManyToMany" classname="com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite" time="0.0">
-    <failure message="java.lang.IllegalStateException: Failed to load ApplicationContext" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Failed to load ApplicationContext
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125)
-	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
-	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
-	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
-	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43)
-	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
-	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Associations marked as mappedBy must not define database mappings like @JoinTable or @JoinColumn: com.kodilla.hibernate.task.Invoice.items
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
-	... 50 more
-Caused by: org.hibernate.AnnotationException: Associations marked as mappedBy must not define database mappings like @JoinTable or @JoinColumn: com.kodilla.hibernate.task.Invoice.items
-	at org.hibernate.cfg.annotations.CollectionBinder.bind(CollectionBinder.java:484)
-	at org.hibernate.cfg.AnnotationBinder.processElementAnnotations(AnnotationBinder.java:2149)
-	at org.hibernate.cfg.AnnotationBinder.processIdPropertiesIfNotAlready(AnnotationBinder.java:969)
-	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:796)
-	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:250)
-	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:231)
-	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:274)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935)
-	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
-	... 65 more
-</failure>
-  </testcase>
-  <system-out><![CDATA[2019-12-02 01:53:30.672  INFO 14824 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite], using SpringBootContextLoader
-2019-12-02 01:53:30.672  INFO 14824 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite]: no resource found for suffixes {-context.xml, Context.groovy}.
-2019-12-02 01:53:30.673  INFO 14824 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite]: CompanyDaoTestSuite does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2019-12-02 01:53:30.682  INFO 14824 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.kodilla.hibernate.KodillaHibernateApplication for test class com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite
-2019-12-02 01:53:30.685  INFO 14824 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-2019-12-02 01:53:30.687  INFO 14824 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6be64e53, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@42d08dca, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@67061d09, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1881b862, org.springframework.test.context.transaction.TransactionalTestExecutionListener@41cce9f7, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7b482d9, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@508d2973, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@455ac9a8, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@63ff03a5, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@407ef749, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@79819884]
+  <testcase name="findByFirstThreeChars" classname="com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite" time="0.648"/>
+  <system-out><![CDATA[17:12:02.236 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite]
+17:12:02.263 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+17:12:02.277 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+17:12:02.303 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+17:12:02.322 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite], using SpringBootContextLoader
+17:12:02.327 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite]: class path resource [com/kodilla/hibernate/manytomany/dao/CompanyDaoTestSuite-context.xml] does not exist
+17:12:02.328 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite]: class path resource [com/kodilla/hibernate/manytomany/dao/CompanyDaoTestSuiteContext.groovy] does not exist
+17:12:02.329 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite]: no resource found for suffixes {-context.xml, Context.groovy}.
+17:12:02.330 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite]: CompanyDaoTestSuite does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:12:02.407 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite]
+17:12:02.568 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [D:\Development\Projects\radek-jagodzki-kodilla-java\kodilla-hibernate\build\classes\java\main\com\kodilla\hibernate\KodillaHibernateApplication.class]
+17:12:02.569 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.kodilla.hibernate.KodillaHibernateApplication for test class com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite
+17:12:02.729 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite]: using defaults.
+17:12:02.730 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+17:12:02.750 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [javax/servlet/ServletContext]
+17:12:02.763 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@70a6f71e, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5acd5cef, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@358dd7ba, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2c965306, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6bcf4f8d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5bd54c3f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@be70f8, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1e2e1d8a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@f8c9ae5, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7ec98b9f, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@d030d0e]
+17:12:02.770 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite]
+17:12:02.771 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite]
+17:12:02.782 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite]
+17:12:02.782 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite]
+17:12:02.783 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite]
+17:12:02.784 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite]
+17:12:02.791 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@7ab989ba testClass = CompanyDaoTestSuite, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@3e674062 testClass = CompanyDaoTestSuite, locations = '{}', classes = '{class com.kodilla.hibernate.KodillaHibernateApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@74b66ca6, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@6e43eea1, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@16e74541, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@7053eea4], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+17:12:02.793 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite]
+17:12:02.794 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite]
+17:12:02.803 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@7ab989ba testClass = CompanyDaoTestSuite, testInstance = com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite@61e76bf4, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@3e674062 testClass = CompanyDaoTestSuite, locations = '{}', classes = '{class com.kodilla.hibernate.KodillaHibernateApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@74b66ca6, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@6e43eea1, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@16e74541, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@7053eea4], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]].
+17:12:02.837 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -107,313 +38,63 @@ Caused by: org.hibernate.AnnotationException: Associations marked as mappedBy mu
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.1.9.RELEASE)
 
-2019-12-02 01:53:30.707  INFO 14824 --- [    Test worker] c.k.h.m.dao.CompanyDaoTestSuite          : Starting CompanyDaoTestSuite on RJ-LAPTOP with PID 14824 (started by jagod in D:\Development\Projects\radek-jagodzki-kodilla-java\kodilla-hibernate)
-2019-12-02 01:53:30.707  INFO 14824 --- [    Test worker] c.k.h.m.dao.CompanyDaoTestSuite          : No active profile set, falling back to default profiles: default
-2019-12-02 01:53:30.790  INFO 14824 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-12-02 01:53:30.812  INFO 14824 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21ms. Found 7 repository interfaces.
-2019-12-02 01:53:30.926  INFO 14824 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2020-03-29 17:12:03.391  INFO 15468 --- [    Test worker] c.k.h.m.dao.CompanyDaoTestSuite          : Starting CompanyDaoTestSuite on RJ-LAPTOP with PID 15468 (started by jagod in D:\Development\Projects\radek-jagodzki-kodilla-java\kodilla-hibernate)
+2020-03-29 17:12:03.393  INFO 15468 --- [    Test worker] c.k.h.m.dao.CompanyDaoTestSuite          : No active profile set, falling back to default profiles: default
+2020-03-29 17:12:04.312  INFO 15468 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-03-29 17:12:04.516  INFO 15468 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 183ms. Found 8 repository interfaces.
+2020-03-29 17:12:05.548  INFO 15468 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2019-12-02 01:53:30.934  INFO 14824 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
-2019-12-02 01:53:30.937  INFO 14824 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
-2019-12-02 01:53:30.937  INFO 14824 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2019-12-02 01:53:30.948  WARN 14824 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Associations marked as mappedBy must not define database mappings like @JoinTable or @JoinColumn: com.kodilla.hibernate.task.Invoice.items
-2019-12-02 01:53:30.948  INFO 14824 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
-2019-12-02 01:53:30.949  INFO 14824 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
-2019-12-02 01:53:30.951  INFO 14824 --- [    Test worker] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2019-12-02 01:53:30.952 ERROR 14824 --- [    Test worker] o.s.boot.SpringApplication               : Application run failed
-
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Associations marked as mappedBy must not define database mappings like @JoinTable or @JoinColumn: com.kodilla.hibernate.task.Invoice.items
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744) ~[spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391) ~[spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) [spring-boot-test-2.1.9.RELEASE.jar:2.1.9.RELEASE]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) [spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) [spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) [spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) [spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) [spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43) [spring-boot-test-autoconfigure-2.1.9.RELEASE.jar:2.1.9.RELEASE]
-	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) [spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
-	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110) [gradle-testing-jvm-5.6.2.jar:5.6.2]
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58) [gradle-testing-jvm-5.6.2.jar:5.6.2]
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38) [gradle-testing-jvm-5.6.2.jar:5.6.2]
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62) [gradle-testing-jvm-5.6.2.jar:5.6.2]
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-5.6.2.jar:5.6.2]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_221]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_221]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_221]
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) [gradle-messaging-5.6.2.jar:5.6.2]
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-5.6.2.jar:5.6.2]
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33) [gradle-messaging-5.6.2.jar:5.6.2]
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94) [gradle-messaging-5.6.2.jar:5.6.2]
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source) [na:na]
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118) [gradle-testing-base-5.6.2.jar:5.6.2]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_221]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_221]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_221]
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) [gradle-messaging-5.6.2.jar:5.6.2]
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-5.6.2.jar:5.6.2]
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182) [gradle-messaging-5.6.2.jar:5.6.2]
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164) [gradle-messaging-5.6.2.jar:5.6.2]
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412) [gradle-messaging-5.6.2.jar:5.6.2]
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64) [gradle-base-services-5.6.2.jar:5.6.2]
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48) [gradle-base-services-5.6.2.jar:5.6.2]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_221]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_221]
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56) [gradle-base-services-5.6.2.jar:5.6.2]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
-Caused by: org.hibernate.AnnotationException: Associations marked as mappedBy must not define database mappings like @JoinTable or @JoinColumn: com.kodilla.hibernate.task.Invoice.items
-	at org.hibernate.cfg.annotations.CollectionBinder.bind(CollectionBinder.java:484) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
-	at org.hibernate.cfg.AnnotationBinder.processElementAnnotations(AnnotationBinder.java:2149) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
-	at org.hibernate.cfg.AnnotationBinder.processIdPropertiesIfNotAlready(AnnotationBinder.java:969) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
-	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:796) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
-	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:250) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
-	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:231) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
-	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:274) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
-	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391) ~[spring-orm-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378) ~[spring-orm-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	... 65 common frames omitted
-
-
-  .   ____          _            __ _ _
- /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
-( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
- \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
-  '  |____| .__|_| |_|_| |_\__, | / / / /
- =========|_|==============|___/=/_/_/_/
- :: Spring Boot ::        (v2.1.9.RELEASE)
-
-2019-12-02 01:53:30.975  INFO 14824 --- [    Test worker] c.k.h.m.dao.CompanyDaoTestSuite          : Starting CompanyDaoTestSuite on RJ-LAPTOP with PID 14824 (started by jagod in D:\Development\Projects\radek-jagodzki-kodilla-java\kodilla-hibernate)
-2019-12-02 01:53:30.975  INFO 14824 --- [    Test worker] c.k.h.m.dao.CompanyDaoTestSuite          : No active profile set, falling back to default profiles: default
-2019-12-02 01:53:31.066  INFO 14824 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-12-02 01:53:31.088  INFO 14824 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22ms. Found 7 repository interfaces.
-2019-12-02 01:53:31.203  INFO 14824 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-2019-12-02 01:53:31.212  INFO 14824 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
-2019-12-02 01:53:31.216  INFO 14824 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
-2019-12-02 01:53:31.216  INFO 14824 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2019-12-02 01:53:31.224  WARN 14824 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Associations marked as mappedBy must not define database mappings like @JoinTable or @JoinColumn: com.kodilla.hibernate.task.Invoice.items
-2019-12-02 01:53:31.225  INFO 14824 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
-2019-12-02 01:53:31.226  INFO 14824 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
-2019-12-02 01:53:31.228  INFO 14824 --- [    Test worker] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2019-12-02 01:53:31.229 ERROR 14824 --- [    Test worker] o.s.boot.SpringApplication               : Application run failed
-
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Associations marked as mappedBy must not define database mappings like @JoinTable or @JoinColumn: com.kodilla.hibernate.task.Invoice.items
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744) ~[spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391) ~[spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) [spring-boot-test-2.1.9.RELEASE.jar:2.1.9.RELEASE]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) [spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) [spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) [spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.outputConditionEvaluationReport(SpringBootDependencyInjectionTestExecutionListener.java:53) [spring-boot-test-autoconfigure-2.1.9.RELEASE.jar:2.1.9.RELEASE]
-	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:46) [spring-boot-test-autoconfigure-2.1.9.RELEASE.jar:2.1.9.RELEASE]
-	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) [spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
-	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110) [gradle-testing-jvm-5.6.2.jar:5.6.2]
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58) [gradle-testing-jvm-5.6.2.jar:5.6.2]
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38) [gradle-testing-jvm-5.6.2.jar:5.6.2]
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62) [gradle-testing-jvm-5.6.2.jar:5.6.2]
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-5.6.2.jar:5.6.2]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_221]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_221]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_221]
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) [gradle-messaging-5.6.2.jar:5.6.2]
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-5.6.2.jar:5.6.2]
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33) [gradle-messaging-5.6.2.jar:5.6.2]
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94) [gradle-messaging-5.6.2.jar:5.6.2]
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source) [na:na]
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118) [gradle-testing-base-5.6.2.jar:5.6.2]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_221]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_221]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_221]
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) [gradle-messaging-5.6.2.jar:5.6.2]
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-5.6.2.jar:5.6.2]
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182) [gradle-messaging-5.6.2.jar:5.6.2]
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164) [gradle-messaging-5.6.2.jar:5.6.2]
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412) [gradle-messaging-5.6.2.jar:5.6.2]
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64) [gradle-base-services-5.6.2.jar:5.6.2]
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48) [gradle-base-services-5.6.2.jar:5.6.2]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_221]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_221]
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56) [gradle-base-services-5.6.2.jar:5.6.2]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
-Caused by: org.hibernate.AnnotationException: Associations marked as mappedBy must not define database mappings like @JoinTable or @JoinColumn: com.kodilla.hibernate.task.Invoice.items
-	at org.hibernate.cfg.annotations.CollectionBinder.bind(CollectionBinder.java:484) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
-	at org.hibernate.cfg.AnnotationBinder.processElementAnnotations(AnnotationBinder.java:2149) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
-	at org.hibernate.cfg.AnnotationBinder.processIdPropertiesIfNotAlready(AnnotationBinder.java:969) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
-	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:796) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
-	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:250) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
-	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:231) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
-	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:274) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
-	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391) ~[spring-orm-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378) ~[spring-orm-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	... 64 common frames omitted
-
-2019-12-02 01:53:31.231 ERROR 14824 --- [    Test worker] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@67061d09] to prepare test instance [com.kodilla.hibernate.manytomany.dao.CompanyDaoTestSuite@5b205db8]
-
-java.lang.IllegalStateException: Failed to load ApplicationContext
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125) ~[spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) ~[spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43) ~[spring-boot-test-autoconfigure-2.1.9.RELEASE.jar:2.1.9.RELEASE]
-	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) ~[spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
-	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110) [gradle-testing-jvm-5.6.2.jar:5.6.2]
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58) [gradle-testing-jvm-5.6.2.jar:5.6.2]
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38) [gradle-testing-jvm-5.6.2.jar:5.6.2]
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62) [gradle-testing-jvm-5.6.2.jar:5.6.2]
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-5.6.2.jar:5.6.2]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_221]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_221]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_221]
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) [gradle-messaging-5.6.2.jar:5.6.2]
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-5.6.2.jar:5.6.2]
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33) [gradle-messaging-5.6.2.jar:5.6.2]
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94) [gradle-messaging-5.6.2.jar:5.6.2]
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source) [na:na]
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118) [gradle-testing-base-5.6.2.jar:5.6.2]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_221]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_221]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_221]
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) [gradle-messaging-5.6.2.jar:5.6.2]
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-5.6.2.jar:5.6.2]
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182) [gradle-messaging-5.6.2.jar:5.6.2]
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164) [gradle-messaging-5.6.2.jar:5.6.2]
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412) [gradle-messaging-5.6.2.jar:5.6.2]
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64) [gradle-base-services-5.6.2.jar:5.6.2]
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48) [gradle-base-services-5.6.2.jar:5.6.2]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_221]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_221]
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56) [gradle-base-services-5.6.2.jar:5.6.2]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Associations marked as mappedBy must not define database mappings like @JoinTable or @JoinColumn: com.kodilla.hibernate.task.Invoice.items
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744) ~[spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391) ~[spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) ~[spring-boot-test-2.1.9.RELEASE.jar:2.1.9.RELEASE]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	... 50 common frames omitted
-Caused by: org.hibernate.AnnotationException: Associations marked as mappedBy must not define database mappings like @JoinTable or @JoinColumn: com.kodilla.hibernate.task.Invoice.items
-	at org.hibernate.cfg.annotations.CollectionBinder.bind(CollectionBinder.java:484) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
-	at org.hibernate.cfg.AnnotationBinder.processElementAnnotations(AnnotationBinder.java:2149) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
-	at org.hibernate.cfg.AnnotationBinder.processIdPropertiesIfNotAlready(AnnotationBinder.java:969) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
-	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:796) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
-	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:250) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
-	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:231) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
-	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:274) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935) ~[hibernate-core-5.3.12.Final.jar:5.3.12.Final]
-	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391) ~[spring-orm-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378) ~[spring-orm-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
-	... 65 common frames omitted
-
+2020-03-29 17:12:05.671  INFO 15468 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.12.Final}
+2020-03-29 17:12:05.674  INFO 15468 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-03-29 17:12:05.946  INFO 15468 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-03-29 17:12:06.233  INFO 15468 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-29 17:12:06.503  INFO 15468 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-29 17:12:06.527  INFO 15468 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Hibernate: create table companies (company_id integer not null, name varchar(255) not null, primary key (company_id)) engine=MyISAM
+Hibernate: alter table items add constraint FKi3fv29v33apu6j1klh8nld3re foreign key (invoice_id) references invoices (id)
+Hibernate: alter table items add constraint FKmtk37pxnx7d5ck7fkq2xcna4i foreign key (product_id) references products (id)
+Hibernate: alter table join_company_employee add constraint FK8qv4sbf5gudy2g20lbjoknvsy foreign key (company_id) references companies (company_id)
+Hibernate: alter table join_company_employee add constraint FKhyidh70ikigdnt5yqddpn795y foreign key (employee_id) references employees (employee_id)
+Hibernate: alter table tasks add constraint FKbin3473ql8w0o6obgf91dly91 foreign key (tasks_financials_id) references task_financials (id)
+Hibernate: alter table tasks add constraint FKlxoobm84mhuon6lu8tx3gh23d foreign key (tasklist_id) references taskslist (id)
+2020-03-29 17:12:08.127  INFO 15468 --- [    Test worker] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-03-29 17:12:08.315  INFO 15468 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-29 17:12:10.017  INFO 15468 --- [    Test worker] c.k.h.m.dao.CompanyDaoTestSuite          : Started CompanyDaoTestSuite in 7.177 seconds (JVM running for 9.146)
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+Hibernate: insert into companies (name, company_id) values (?, ?)
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+Hibernate: insert into companies (name, company_id) values (?, ?)
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+Hibernate: insert into companies (name, company_id) values (?, ?)
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+Hibernate: insert into companies (name, company_id) values (?, ?)
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+Hibernate: insert into companies (name, company_id) values (?, ?)
+Hibernate: SELECT * FROM COMPANIES WHERE SUBSTRING(NAME, 1, 3) = ?
+Grey Matter
+Grey Group
+Hibernate: select company0_.company_id as company_1_0_0_, company0_.name as name2_0_0_ from companies company0_ where company0_.company_id=?
+Hibernate: select employees0_.company_id as company_2_4_0_, employees0_.employee_id as employee1_4_0_, employee1_.employee_id as employee1_1_1_, employee1_.firstname as firstnam2_1_1_, employee1_.lastname as lastname3_1_1_ from join_company_employee employees0_ inner join employees employee1_ on employees0_.employee_id=employee1_.employee_id where employees0_.company_id=?
+Hibernate: delete from companies where company_id=?
+Hibernate: select company0_.company_id as company_1_0_0_, company0_.name as name2_0_0_ from companies company0_ where company0_.company_id=?
+Hibernate: select employees0_.company_id as company_2_4_0_, employees0_.employee_id as employee1_4_0_, employee1_.employee_id as employee1_1_1_, employee1_.firstname as firstnam2_1_1_, employee1_.lastname as lastname3_1_1_ from join_company_employee employees0_ inner join employees employee1_ on employees0_.employee_id=employee1_.employee_id where employees0_.company_id=?
+Hibernate: delete from companies where company_id=?
+Hibernate: select company0_.company_id as company_1_0_0_, company0_.name as name2_0_0_ from companies company0_ where company0_.company_id=?
+Hibernate: select employees0_.company_id as company_2_4_0_, employees0_.employee_id as employee1_4_0_, employee1_.employee_id as employee1_1_1_, employee1_.firstname as firstnam2_1_1_, employee1_.lastname as lastname3_1_1_ from join_company_employee employees0_ inner join employees employee1_ on employees0_.employee_id=employee1_.employee_id where employees0_.company_id=?
+Hibernate: delete from companies where company_id=?
+Hibernate: select company0_.company_id as company_1_0_0_, company0_.name as name2_0_0_ from companies company0_ where company0_.company_id=?
+Hibernate: select employees0_.company_id as company_2_4_0_, employees0_.employee_id as employee1_4_0_, employee1_.employee_id as employee1_1_1_, employee1_.firstname as firstnam2_1_1_, employee1_.lastname as lastname3_1_1_ from join_company_employee employees0_ inner join employees employee1_ on employees0_.employee_id=employee1_.employee_id where employees0_.company_id=?
+Hibernate: delete from companies where company_id=?
+Hibernate: select company0_.company_id as company_1_0_0_, company0_.name as name2_0_0_ from companies company0_ where company0_.company_id=?
+Hibernate: select employees0_.company_id as company_2_4_0_, employees0_.employee_id as employee1_4_0_, employee1_.employee_id as employee1_1_1_, employee1_.firstname as firstnam2_1_1_, employee1_.lastname as lastname3_1_1_ from join_company_employee employees0_ inner join employees employee1_ on employees0_.employee_id=employee1_.employee_id where employees0_.company_id=?
+Hibernate: delete from companies where company_id=?
+Hibernate: select count(*) as col_0_0_ from companies company0_
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

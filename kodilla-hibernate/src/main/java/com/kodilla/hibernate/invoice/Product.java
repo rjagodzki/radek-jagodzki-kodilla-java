@@ -7,7 +7,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "PRODUCTS")
-public class Product{
+public class Product {
     private int id;
     private String name;
     private List<Item> items = new ArrayList<>();
@@ -20,8 +20,8 @@ public class Product{
     }
 
     @Id
-    @GeneratedValue
     @NotNull
+    @GeneratedValue
     @Column(name = "ID", unique = true)
     public int getId() {
         return id;
@@ -42,16 +42,15 @@ public class Product{
         return items;
     }
 
-    private void setId(int id) {
-        this.id = id;
-    }
-
-    private void setName(String name) {
-        this.name = name;
-    }
-
     public void setItems(List<Item> items) {
         this.items = items;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }
