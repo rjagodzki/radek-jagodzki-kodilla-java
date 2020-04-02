@@ -8,3 +8,5 @@ include 'kodilla-prework'
 include 'kodilla-good-patterns'
 include 'kodilla-hibernate'
 include 'kodilla-testing'
+include 'kodilla-patterns2'
+
