@@ -4,11 +4,18 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
-@NamedNativeQuery(
-        name = "Company.findByFirstThreeCharsCompanyName",
-        query = "SELECT * FROM COMPANIES WHERE SUBSTRING(NAME, 1, 3) = :STR",
-        resultClass = Company.class
-)
+@NamedNativeQueries({
+        @NamedNativeQuery(
+                name = "Company.findByFirstThreeCharsCompanyName",
+                query = "SELECT * FROM COMPANIES WHERE SUBSTRING(NAME, 1, 3) = :STR",
+                resultClass = Company.class
+        ),
+        @NamedNativeQuery(
+                name = "Company.findByFragmentOfString",
+                query = "SELECT * FROM COMPANIES WHERE COMPANY_NAME LIKE '%':STR'%'",
+                resultClass = Company.class
+        )
+})
 @Entity
 @Table(name = "COMPANIES")
 public class Company {
@@ -32,7 +39,7 @@ public class Company {
     }
 
     @NotNull
-    @Column(name = "NAME")
+    @Column(name = "COMPANY_NAME")
     public String getName() {
         return name;
     }

@@ -10,6 +10,11 @@ import java.util.List;
                 name = "Employee.findBySurname",
                 query = "FROM Employee WHERE lastName =:LASTNAME"
         )
+@NamedNativeQuery(
+        name = "Employee.findByFragmentOfString",
+        query = "SELECT * FROM EMPLOYEES WHERE LASTNAME LIKE '%':STR'%'",
+        resultClass = Employee.class
+)
 
 @Entity
 @Table(name = "EMPLOYEES")
