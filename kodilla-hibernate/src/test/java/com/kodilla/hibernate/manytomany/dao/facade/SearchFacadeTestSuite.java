@@ -40,7 +40,7 @@ public class SearchFacadeTestSuite {
 
         // When
 
-        List<Company> companies = searchFacade.findCompanyByFragmentOfString("Amazon");
+        List<Company> companies = searchFacade.findCompanyByFragmentOfString("%maz%");
 
         // Then
         Assert.assertEquals("Amazon", companies.get(0).getName());
@@ -63,7 +63,7 @@ public class SearchFacadeTestSuite {
         employeeDao.save(employee3);
 
         // When
-        List<Employee> employees = searchFacade.findEmployeeByFragmentOfString("osb");
+        List<Employee> employees = searchFacade.findEmployeeByFragmentOfString("%osb%");
 
         // Then
         Assert.assertEquals("Mosby", employees.get(0).getLastName());

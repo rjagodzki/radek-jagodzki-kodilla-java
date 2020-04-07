@@ -12,7 +12,7 @@ import java.util.List;
         )
 @NamedNativeQuery(
         name = "Employee.findByFragmentOfString",
-        query = "SELECT * FROM EMPLOYEES WHERE LASTNAME LIKE '%':STR'%'",
+        query = "SELECT * FROM EMPLOYEES WHERE LASTNAME LIKE :STR",
         resultClass = Employee.class
 )
 
