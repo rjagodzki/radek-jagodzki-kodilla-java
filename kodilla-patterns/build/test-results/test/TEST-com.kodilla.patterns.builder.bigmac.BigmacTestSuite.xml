@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.patterns.builder.bigmac.BigmacTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-09T22:09:37" hostname="RJ-LAPTOP" time="0.003">
-  <properties/>
-  <testcase name="testBigmacMaker" classname="com.kodilla.patterns.builder.bigmac.BigmacTestSuite" time="0.003"/>
-  <system-out><![CDATA[com.kodilla.patterns.builder.bigmac.Bigmac@d1de1f9
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

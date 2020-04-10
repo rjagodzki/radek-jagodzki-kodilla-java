@@ -9,4 +9,6 @@ include 'kodilla-good-patterns'
 include 'kodilla-hibernate'
 include 'kodilla-testing'
 include 'kodilla-patterns2'
+include 'kodilla-patterns'
+include 'kodilla_testing2'
 

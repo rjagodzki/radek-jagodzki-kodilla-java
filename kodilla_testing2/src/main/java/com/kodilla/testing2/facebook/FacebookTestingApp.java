@@ -11,21 +11,22 @@ public class FacebookTestingApp {
     public static final String XPATH_DAY = "select[1]";
     public static final String XPATH_MONTH = "select[2]";
     public static final String XPATH_YEAR = "select[3]";
+
     public static void main(String[] args) {
         WebDriver webDriver = WebDriverConfig.getDriver(WebDriverConfig.CHROME);
         webDriver.get("https://www.facebook.com/");
 
-        while(!webDriver.findElement(By.xpath(XPATH_SELECT+""+XPATH_DAY)).isDisplayed());
+        while (!webDriver.findElement(By.xpath(XPATH_SELECT + "" + XPATH_DAY)).isDisplayed()) ;
 
-        WebElement dayField = webDriver.findElement(By.xpath(XPATH_SELECT+""+XPATH_DAY));
+        WebElement dayField = webDriver.findElement(By.xpath(XPATH_SELECT + "" + XPATH_DAY));
         Select selectDay = new Select(dayField);
         selectDay.selectByIndex(11);
 
-        WebElement monthField = webDriver.findElement(By.xpath(XPATH_SELECT+""+XPATH_MONTH));
+        WebElement monthField = webDriver.findElement(By.xpath(XPATH_SELECT + "" + XPATH_MONTH));
         Select selectMonth = new Select(monthField);
         selectMonth.selectByIndex(12);
 
-        WebElement yearField = webDriver.findElement(By.xpath(XPATH_SELECT+""+XPATH_YEAR));
+        WebElement yearField = webDriver.findElement(By.xpath(XPATH_SELECT + "" + XPATH_YEAR));
         Select selectYear = new Select(yearField);
         selectYear.selectByIndex(13);
 
