@@ -8,7 +8,7 @@ public class HealthyShop implements Shop{
         this.nameOfShop = nameOfShop;
         this.product = product;
     }
-
+    @Override
     public String getNameOfShop() {
         return nameOfShop;
     }

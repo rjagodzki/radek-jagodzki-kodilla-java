@@ -9,6 +9,7 @@ public class GlutenFreeShop implements Shop{
         this.product = product;
     }
 
+    @Override
     public String getNameOfShop() {
         return nameOfShop;
     }

@@ -4,12 +4,7 @@ import java.util.List;
 
 public class Application {
     public static void main(String[] args) {
-        ShopService shopService = new ShopService();
-
-        List<Shop> shops = shopService.listOfShops();
-        for(Shop shop :shops) {
-            shop.process();
-        }
-
+        OrderService orderService = new OrderService();
+        orderService.completeOrder("GlutenFreeShop", new Order(true));
     }
 }
