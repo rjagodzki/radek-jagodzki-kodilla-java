@@ -14,6 +14,11 @@ public class ExtraFoodShop implements Shop {
     }
 
     @Override
+    public Product getProduct() {
+        return product;
+    }
+
+    @Override
     public void process() {
         System.out.println("Welcome to: " + getNameOfShop());
         System.out.println("The Best Shop");

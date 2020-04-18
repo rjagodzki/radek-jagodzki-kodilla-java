@@ -4,7 +4,10 @@ import java.util.List;
 
 public class Application {
     public static void main(String[] args) {
+        Order order = new Order(true);
+        order.iterator("GlutenFreeShop");
+        order.getShop().process();
         OrderService orderService = new OrderService();
-        orderService.completeOrder("GlutenFreeShop", new Order(true));
+        orderService.completeOrder(order);
     }
 }
