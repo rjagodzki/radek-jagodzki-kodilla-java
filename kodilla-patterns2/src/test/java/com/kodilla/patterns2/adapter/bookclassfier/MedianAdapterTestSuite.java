@@ -8,7 +8,7 @@ import org.junit.Test;
 import java.util.HashSet;
 import java.util.Set;
 
-public class MedianAdapterTestSuite {
+public class   MedianAdapterTestSuite {
     @Test
     public void medianPublicationYearTest() {
         // Given
