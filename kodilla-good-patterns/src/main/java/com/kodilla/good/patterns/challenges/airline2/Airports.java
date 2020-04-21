@@ -1,4 +1,4 @@
-package com.kodilla.good.patterns.challenges.airline;
+package com.kodilla.good.patterns.challenges.airline2;
 
 import java.util.LinkedList;
 

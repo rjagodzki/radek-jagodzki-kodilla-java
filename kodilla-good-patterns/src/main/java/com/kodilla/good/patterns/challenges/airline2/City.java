@@ -1,6 +1,4 @@
-package com.kodilla.good.patterns.challenges.airline;
-
-import java.util.List;
+package com.kodilla.good.patterns.challenges.airline2;
 
 public class City {
     private String name;
